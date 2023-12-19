@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <header class="header">
+        <a href = "inbex.html">
+      <img
+        src="logo1.png"
+        height="40px"
+        width="'40px" style="margin-left: 50px;"
+        alt="Логотип"
+    />
+</a>
+      <nav class="menu">
+        <ul class="header__items">
+          <li><a class="header__item" href="index1.html">Аbout me</a></li>
+          <li><a class="header__item" href="index2.html">Portfolio</a></li>
+          <li><a class="header__item" href="index3.html">Contacts</a></li>
+        </ul>
+      <!-- <div class="header__buttons"> -->
+          <!-- <button onclick="">кнопка 1</button> -->
+          <!-- <button onclick="">кнопка 2</button> -->
+        <!-- </div> -->
+      </nav>
+    </header>
+  </head>
+  <body>
+    <div class="page">
+<h1>Форма связи</h1>
+    <form action="/message" method="post" class="form">
+        <div class="hint">
+            <p>Имя:</p>
+<input type="text" class="name inp" name="firstName" placeholder="Ваше имя..." required>
+</div>
+<div class="hint">
+    <p>Почта:</p>
+<input type="email" class="gmail inp" name="gmail" placeholder="Ваш адрес електронной почты..." required>
+
+</div>
+<div class="hint">
+    <p>Сообщение:</p>
+<textarea name="message" class="message" required placeholder="Ваше сообщение..."></textarea>
+</div>
+<div class="pos-btn"><button type="submit">Отправить</button></div>
+    </form>
+
+</div>
+<div class="footer"></div><!--Футер для отступа-->
+<script src="js.js"></script>
+</body>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+ 
+    *{
+        margin:0;
+        padding:0;
+    }
+    html{
+font-family: "Montserrat";
+font-weight: 400;
+    }
+    .footer{
+      
+        margin-top: 100px;
+    }
+    .inp{
+     
+        width: 250px;
+        font-family:inherit;
+        padding: 5px 15px;
+      
+        height: 30px;
+        font-weight: inherit;
+        letter-spacing: 1.3px;
+        border-radius: 0;
+        outline: none;
+      
+        border: 0;
+        background-color: rgb(247, 247, 247);
+       
+    }
+    .message{
+resize: none;
+padding: 12px 15px;
+width: 250px;
+letter-spacing: 1.3px;
+font-weight: inherit;
+      
+        font-family:inherit;
+      
+        height: 120px;
+        border-radius: 0;
+        outline: none;
+      
+        border: 0;
+        background-color: rgb(247, 247, 247);
+    }
+    .pos-btn{
+        width: 100%;
+        top: 50px;
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+    }
+    .pos-btn button{
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        min-width: 280px;
+        border: 0;
+        margin: 0px 15px;
+       cursor: pointer;
+        padding: 23px 0px;
+        font-family: inherit;
+    }
+    .hint{
+        margin: 20px;
+    }
+    .hint p{
+        padding: 2px;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    .form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+         width: 600px;
+         margin: 80px 0px 0px 0px;
+    }
+    @media (max-width:600px){
+        .form{
+            width:100%;
+            align-items: center;
+        }
+   
+    }
+    @media (max-width:325px){
+
+    }
+    .page{
+        margin-top: 50px;
+        width: 100%;
+
+        display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+</style>
+<footer>
+    <div class="footer"> 
+      <div class = "minilogo">
+        <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fneradoos%3Figshid%3DYTQwZjQ0NmI0OA%3D%3D&cc_key="><img
+          src="inst.png"
+          height="40px"
+          width="'40px"
+          alt="Логотип"
+        /></a>
+        <a href="@neradoos"><img
+        src="tele.png"
+        height="40px"
+        width="'40px"
+        alt="Логотип"
+      /></a>
+      <a href="https://vk.com/vikinodelo"><img src="vk.png"
+      height="40px"
+      width="'40px"
+      alt="Логотип"
+    /></a>
+      </div>
+      <div class="FIO"> <p class="FIO">Нерадовская Виктория Андреевна</p></div>
+    </div>
+        </footer>
+      </body>
+  </html>
+  

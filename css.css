@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  margin-left: 300px;
+}
+
+h1  {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+h2{
+  margin: 0;
+  color: black;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 30px;
+}
+
+text{
+  text-align: right;
+  color: black;
+  
+}
+.text2{
+  text-align: right;
+  color: black;
+  padding-bottom: 50%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: black;
+  padding: 8px 16px;
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 500px;
+}
+
+.header__item {
+  color: white;
+  text-decoration: none;
+}
+
+/* .header__buttons { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* width: 50px; */
+  /* justify-content: space-between; */
+/* } */
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.intro {
+  background-image: url("./img.png");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+  
+}
+
+.page-title {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+}
+
+.slider img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+
